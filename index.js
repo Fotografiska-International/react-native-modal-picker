@@ -12,7 +12,6 @@ import {
     ScrollView,
     TouchableOpacity,
     Platform,
-    ViewPropTypes,
 } from 'react-native';
 
 import styles from './style';
@@ -24,16 +23,16 @@ const propTypes = {
     data: PropTypes.array,
     onChange: PropTypes.func,
     initValue: PropTypes.string,
-    style: ViewPropTypes.style,
-    selectStyle: ViewPropTypes.style,
-    optionStyle: ViewPropTypes.style,
+    style: View.propTypes.style,
+    selectStyle: View.propTypes.style,
+    optionStyle: View.propTypes.style,
     optionTextStyle: Text.propTypes.style,
-    sectionStyle: ViewPropTypes.style,
+    sectionStyle: View.propTypes.style,
     sectionTextStyle: Text.propTypes.style,
-    cancelStyle: ViewPropTypes.style,
+    cancelStyle: View.propTypes.style,
     cancelTextStyle: Text.propTypes.style,
-    overlayStyle: ViewPropTypes.style,
-    optionContainer: ViewPropTypes.style,
+    overlayStyle: View.propTypes.style,
+    optionContainer: View.propTypes.style,
     cancelText: PropTypes.string,
     scrollProps: PropTypes.object,
 };
